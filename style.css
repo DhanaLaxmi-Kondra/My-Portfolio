@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans:opsz,wght@6..12,500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #0A192F;
+  color: #E0E0E0;
+}
+.whatsapp{
+  border-radius: 50px;
+}
+
+/*--------- Navnar -------*/
+.logo {
+  width: 50px;
+  height: 42px;
+  border: 2px solid #E0E0E0;
+  border-radius: 27px;
+}
+
+#nav-home{
+  font-size: 20px;
+  color: #E0E0E0;
+}
+
+#nav-about{
+  font-size: 20px;
+  color: #E0E0E0;
+}
+
+#nav-projects{
+  font-size: 20px;
+  color: #E0E0E0;
+}
+
+#nav-contact{
+  font-size: 20px;
+  color: #E0E0E0;
+}
+
+#nav-bar{
+  background-color: #0A192F;
+}
+
+/*----------home----------*/
+#home {
+  padding-left: 30px;
+  padding-right: 80px;
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.photo {
+  width: 350px;
+  margin-top: 8%;
+  border: 5px solid #E0E0E0;
+  border-radius: 51%;
+}
+
+.home-container {
+  padding: 10px 10%;
+  align-items: center;
+}
+
+.styling-color{
+  background-image: linear-gradient(to bottom, #0f172a, #12022f,#475569, #64748b);
+}
+
+.profession{
+  font-size: 30px;
+}
+
+.name {
+  margin-top: 20px;
+  font-size: 50px;
+}
+
+.my-name {
+  color: #00ADB5;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px;
+  border: 2px solid #E0E0E0;
+  border-radius: 10px;
+  background: none;
+  cursor: pointer;
+  transition: border-color 0.5s, transform 0.5s;
+}
+
+.btn:hover {
+  border-color: #00ADB5;
+}
+
+.btn a {
+  text-decoration: none;
+  color: #E0E0E0;
+  font-size: 16px;
+}
+
+.fa-brands,
+.fab {
+  font-weight: 400;
+  margin-right: 7px;
+}
+
+/*----------about----------*/
+#about {
+  padding: 80px 0 40px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sub-heading {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.paras {
+  font-size: 18px;
+  font-family: 'Nunito', 'sans-serif';
+}
+
+.tag-heading {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tag-subHeading {
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 50px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.tag-subHeading::after {
+  content: '';
+  width: 0;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+  background: #00ADB5;
+}
+
+.tag-subHeading.active-subHeading::after {
+  width: 100%;
+}
+
+.tag-content ul li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tag {
+  color: #00ADB5;
+  font-size: 20px;
+}
+
+.YOP {
+  margin-left: 30px;
+}
+
+.tag-content {
+  display: none;
+}
+
+.tag-content.active-content {
+  display: block;
+}
+
+/*----------projects----------*/
+#projects {
+  padding: 70px 0 30px;
+}
+
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+
+.projects-list div {
+  background: white;
+  color: #333333;
+  padding: 10px 30px;
+  border-radius: 10px;
+  transition: background 0.5s, transform 0.5s;
+}
+
+.projects-list div:hover {
+  background: rgb(0, 173, 181);
+  transform: translateY(-10px);
+  color: #E0E0E0;
+}
+
+.projects-list div i {
+  font-size: 55px;
+  font-weight: 900;
+  margin: 12% 0;
+  color: grey;
+}
+
+.projects-list div h2 {
+  padding: 10px 0;
+}
+
+.projects-list div a {
+  text-decoration: none;
+  color: #333333;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.projects-list div p {
+  margin-bottom: 20px;
+  font-size: 17px;
+}
+
+.technologies{
+  font-weight: bold;
+}
+
+.hire-head {
+  margin-left: 13%;
+}
+
+.hire {
+  margin: 20px auto;
+  font-size: 17px;
+  background: red;
+  padding: 10px;
+  width: 75%;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid;
+}
+
+
+/*----------contact----------*/
+#contact {
+  padding: 75px 0 40px;
+}
+
+.contact-leftside {
+  flex-basis: 60%;
+}
+
+.contact-heading {
+  font-family: "Harlow Solid Italic";
+  font-size: 70px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #fff;
+  width: 400px;
+}
+
+.btn2 {
+  width: 13%;
+}
+
+
+.contact-rightside {
+  flex-basis: 35%;
+}
+
+.contact-rightside h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.contact-rightside p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.contact-rightside p i {
+  margin-right: 15px;
+  color: #00ADB5;
+  font-size: 18px;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.contact-rightside p i:hover {
+  color: #00ADB5;
+  transform: translateX(5px);
+}
+
+.social-link {
+  margin: 30px 0;
+}
+
+.social-link a {
+  text-decoration: none;
+  margin-right: 15px;
+  color: white;
+  font-size: 25px;
+  display: inline-block;
+  transition: color 0.5s, transform 0.5s;
+}
+
+.social-link a:hover {
+  color: #00ADB5;
+  transform: translateY(-5px);
+}
+
+.fa-download {
+  margin-right: 8px;
+}
+
+.cv {
+  transition: background 2.5s;
+}
+
+.cv:hover {
+  background: #00ADB5;
+}
+
+.whatsapp {
+  position: fixed;
+  right: 50px;
+  bottom: 60px;
+  width: 3%;
+  z-index: 2;
+  transition: transform 0.5s;
+}
+
+.whatsapp:hover {
+  transform: scale(1.1);
+}
+
+.copyright {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 14px;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: #00ADB5;
+}
+
+/*-----------media query--------------*/
+
+@media (max-width: 768px) {
+  .contact-leftside {
+    display: none;
+  }
+  .contact-rightside{
+    margin-top: 70px;
+  }
+  .photo{
+    display: none;
+  }
+  #home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+  }
+  .profession{
+    text-align: center;
+  }
+  .name{
+    text-align: center;
+    font-size: 23px;
+  }
+}
+
+
+@media only screen and (max-width:943px) {
+
+  #home {
+    width: 100%;
+  }
+
+  .home-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .photo {
+    width: 95%;
+    margin-top: 35%;
+  }
+
+  .header-text {
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header-text h1 {
+    margin-top: 20px;
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .btn {
+    width: 40%;
+  }
+
+  .row {
+    display: block;
+  }
+
+  .about-col-1 img {
+    width: 100%;
+    height: 45vh;
+    padding: 0 15px;
+  }
+
+  .sub-heading {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+  .paras {
+    font-size: 16px;
+    font-family: 'Nunito', 'sans-serif';
+    padding-top: 15px;
+  }
+
+  .tag-subHeading {
+    margin-right: 35px;
+    letter-spacing: 0;
+  }
+
+  #about {
+    padding: 30px 0;
+  }
+
+  .hire-head{
+    margin: 0px;
+  }
+
+  .hire{
+    width: 100%;
+  }
+
+  .location{
+    font-size: 14px;
+  }
+
+  .board{
+    font-size: 15px;
+  }
+
+  .YOP{
+    font-size: 14px;
+    margin-left: 20px;
+  }
+
+  .projects-list div p {
+    font-size: 16px;
+  }
+
+  .projects-list div h2 {
+    font-size: 20px;
+  }
+
+  #contact {
+    padding: 30px 0;
+  }
+
+  .btn2 {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+
+  .contact-rightside p {
+    font-size: 16px;
+  }
+
+  .whatsapp {
+    width: 13%;
+    bottom: 40px;
+    right: 40px;
+    z-index: 2;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+
+}
+
+/*-----------changing text automatically--------------*/
+
+.typing-container {
+  font-size: 44px;
+  font-weight: bold;
+  white-space: nowrap; 
+  font-family: italic;
+  overflow: hidden; 
+  border-right: 2px solid black; 
+  color:orange;
+  width: 0;
+  animation: typing 6s steps(30) 1s infinite, blink 0.5s step-end infinite, changeText 18s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes changeText {
+  0% {
+    content: "Front End Developer";
+  }
+  30% {
+    content: "Back End Developer";
+  }
+  67% {
+    content: "Software Engineer";
+  }
+  100% {
+    content: "Front End Developer";
+  }
+}

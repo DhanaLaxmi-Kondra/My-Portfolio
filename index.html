@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- -------------favicon-------------->
+    <link rel="icon" href="favicon.png">
+
+    <title>Dhana developer</title>
+
+    <!-- -------------font-awesome-------------->
+    <script src="https://kit.fontawesome.com/8219f0bc91.js" crossorigin="anonymous"></script>
+
+    <!-- -------------css-sheet-------------->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- -------------whatsapp web-------------->
+    <a href="https://wa.me/9390863269"><img src="whatsApp.png" class="whatsapp" alt="chat"></i></a>
+</head>
+
+<body>
+
+    <!--------------- Navbar ---------------->
+    <nav class="navbar navbar-expand-lg navbar-dark pl-5 pr-5 w-100 fixed-top" id="nav-bar">
+        <a class="navbar-brand" href="#">
+          <img
+            src="logo.png"
+            class="logo"
+            alt="logo"
+          />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link" id="nav-home" href="#home">Home</a>
+            <a class="nav-link" id="nav-about" href="#about">About Me</a>
+            <a class="nav-link" id="nav-projects" href="#projects">Projects</a>
+            <a class="nav-link" id="nav-contact" href="#contact">Contact Me</a>
+          </div>
+        </div>
+      </nav>
+
+    <!-- -------------home-section-------------->
+    <section id="home" class="d-flex flex-row justify-content-around align-items-center">
+        <div class="home-container styling-color">
+           
+            <h1 class="name ">Hi, I'm <span class="my-name">Dhanalaxmi Kondra</span></h1>
+            <div class="home-link d-flex flex-column">
+                
+                <div class="typing-container" class="profession"></div>
+                <div class="social-link">
+                    <a href="https://www.linkedin.com/in/dhanalaxmi-kondra/" target="_blank">
+                        <i class="fa-brands fa-linkedin fa-lg"></i>
+                    </a>
+                    <a href="https://github.com/DhanaLaxmi-Kondra" target="_blank">
+                        <i class="fa-brands fa-github fa-lg"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img class="photo" src="photo.jpg">
+        </div>
+    </section>
+
+    <!-- -------------about-section-------------->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about col-12 p-4">
+                    <h1 class="sub-heading">About Me</h1>
+                    <p class="paras">Highly motivated and skilled web developer seeking a challenging position in web
+                        development.
+                        As a creative problem solver with a strong foundation in 
+                        <span class="technologies">Python, React.js, JavaScript, HTML, CSS, Bootstrap, and responsive design</span>,
+                        my objective is to leverage my technical expertise and passion for building user-friendly and
+                        visually appealing websites to contribute effectively to a dynamic development team. <br><br>
+                        Eager to contribute to a dynamic team as a Web Developer,
+                        leveraging creative problem-solving skills and a drive for delivering high-quality user
+                        experiences.
+                        Committed to continuous learning and staying updated with the latest industry trends and
+                        technologies. <br><br>
+                        I aim to continuously grow and stay up-to-date with the latest technologies to deliver
+                        innovative and high-quality web solutions that meet and exceed client expectations.
+                    </p>
+                    <br><br>
+                    <div class="tag-heading">
+                        <p class="tag-subHeading active-subHeading" onclick="opentag(event, 'skills')">Skills</p>
+                        <p class="tag-subHeading" onclick="opentag(event, 'education')">Education</p>
+                        <p class="tag-subHeading" onclick="opentag(event, 'internship')">Internship</p>
+                    </div>
+                    <div class="tag-content active-content" id="skills">
+                        <ul>
+                            <li><span class="tag">Front-End</span><br>React.js, JavaScript, HTML, CSS, Bootstrap 5.0</li>
+                            <li><span class="tag">Database</span><br>MongoDB, SQL</li>
+                            <li><span class="tag">Programming Languages</span><br>C, Python</li>
+                            <li><span class="tag">Version Control</span><br>GitHub</li>
+                        </ul>
+                    </div>
+                    <div class="tag-content" id="education">
+                        <ul>
+                            <li><span class="tag">Bachelor of Technology</span><br>
+                                <span class="board">Mahatma Gandhi Institute of Technology</span>
+                                <span><i class="fa-solid fa-location-dot" style="color: #e6e9ef;"></i></span>
+                                <span class="location">Hyderabad</span>
+                                <span class="YOP"><i class="fa-regular fa-calendar"></i></span>
+                                <span>2019 - 2023</span>
+                            </li>
+                            <li><span class="tag">Intermediate</span><br><span class="board">State Board of</span>
+                                <span><i class="fa-solid fa-location-dot" style="color: #e6e9ef;"></i></span>
+                                <span class="location">Telangana</span>
+                                <span class="YOP"><i class="fa-regular fa-calendar"></i></span>
+                                <span>2017 - 2019</span></li>
+                            <li><span class="tag">High School</span><br><span class="board">SSC</span>
+                                <span class="YOP"><i class="fa-regular fa-calendar"></i></span>
+                                <span>2017</span></li>
+                        </ul>
+                    </div>
+                    <div class="tag-content" id="internship">
+                        <ul>
+                            <li><span class="tag">MERN Stack Development</span><br>
+                                <span class="board">NxtWave</span>
+                                <span class="YOP"><i class="fa-regular fa-calendar"></i></span>
+                                <span>26/03/2024 – present</span></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------projects-section-------------->
+    <section id="projects">
+        <div class="container">
+            <h1 class="sub-heading">My Projects</h1>
+            <div class="projects-list">
+                <div>
+                    <h2>Stop Watch</h2>
+                    <p>In this project i included essential features such as start, stop, and reset buttons, enabling users to control the timer seamlessly.</p>
+                    <p><span class="technologies">Technologies: </span>JavaScript, HTML5, CSS3, ReactJS</p>
+                    <a href="https://stopwatch671.ccbp.tech/" target="_blank">See Project</a>
+                </div>
+                <div>
+                    <h2>Todo Application</h2>
+                    <p>Built the front-end part of a Todo App using Javascript. Features include adding, editing, and deleting tasks. Implimented responsive design and local storage to persist tasks.</p>
+                    <p><span class="technologies">Technologies: </span>JavaScript, HTML5, CSS3, Bootstrap</p>
+                    <a href="https://dhanalaxmitodo.ccbp.tech/"
+                        target="_blank">
+                        See Project</a>
+                </div>
+                <div>
+                    <h2>Nxt Trendz</h2>
+                    <p>I created the frontend of Nxt Trendz, an e-commerce application similar to Amazon, using React. The app allows users to log in, search, sort, filter products, and manage their shopping cart.</p>
+                    <p><span class="technologies">Technologies: </span>ReactJS, JavaScript, HTML5, CSS3</p>
+                    <h5>Login Details</h5>
+                    <p>Username:rahul</p>
+                    <p>Password:rahul@2021</p>
+                    <a href="https://sortproducts1.ccbp.tech/">See Project</a>
+                </div>
+            </div>
+            <h2 class="hire-head">I am currently available for work</h2>
+            <div class="hire">
+                <p>I believe in the power of collaboration and continuous learning.
+                    Every project is an opportunity to learn and grow,
+                    and I'm always excited to tackle new challenges and refine my skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- -------------contact-section-------------->
+    <section id="contact">
+        <div class="container p-5">
+            <div class="row">
+                <div class="contact-leftside">
+                    <h1 class="contact-heading">Let's start a project together</h1>
+                </div>
+                <div class="contact-rightside">
+                    <h1 class="sub-heading">Contact Me</h1>
+                    <p><i class="fa-solid fa-location-dot"></i>India</p>
+                    <p><i class="fa-solid fa-envelope"></i>dhanalaxmi9390@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-9390863269</p>
+                    <div class="social-link">
+                        <h3>Connect</h3>
+                        <a href="https://www.linkedin.com/in/dhanalaxmi-kondra/" target="_blank">
+                            <i class="fa-brands fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://github.com/DhanaLaxmi-Kondra" target="_blank">
+                            <i class="fa-brands fa-github fa-lg"></i>
+                        </a>
+                    </div>
+                    <div class="resume">
+                        <a href="DHANA_Final_Resume.pdf" target="_blank">
+                            <h3>My Resume</h3>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <div class="copyright">
+        <p>Copyright &copy2024 <a href="https://github.com/DhanaLaxmi-Kondra" target="_blank">Dhanalaxmi Kondra</a>.
+            All rights reserved.</p>
+    </div>
+    <!-- -------------Script-------------->
+    <script src="script.js" charset="utf-8"></script>
+</body>
+
+</html>
